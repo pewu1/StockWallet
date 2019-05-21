@@ -1,0 +1,722 @@
+body{
+    margin: 4%;
+    padding: 0;
+    background-color: #0D0F3A;
+
+}
+#container{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+#left_menu{
+    float: left;
+    padding: 25px;
+    width: 230px;
+    height: 770px;
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color: #72737D;
+    border-radius: 20px;
+    font-weight: 700;
+}
+.menu_option{
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 18px;
+    float: left;
+    margin-left: 45px;
+    cursor: pointer;
+    font-weight: 500;
+    transition-duration: 0.15s;
+    opacity: 0.7;
+    width: 80%;
+}
+#copy{
+    font-size: 15px;
+    height: 20px;
+    position: absolute;
+    margin-top: 140px;
+}
+#selected{
+    float: left;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 18px;
+    text-shadow: 0 0 1px white;
+    margin-left: 45px;
+    cursor: pointer;
+    font-weight: 500;
+    transition-duration: 0.15s;
+    opacity: 1;
+    width: 80%;
+    background-color: rgb(90, 91, 99)
+}
+.menu_option:hover{
+    float: left;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 18px;
+    text-shadow: 0 0 1px white;
+    margin-left: 45px;
+    cursor: pointer;
+    font-weight: 500;
+    transition-duration: 0.15s;
+    opacity: 1;
+    width: 80%;
+    background-color: rgb(90, 91, 99)
+}
+#upper_menu{
+    float: right;
+    width: 1400px;
+    height: 150px;
+    position: absolute;
+    margin-left: 294px;
+}
+.upper_menu_info{
+    float: left;
+    margin-left: 4%;
+    width: 20%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: white;
+    line-height: 60px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#content{
+    float: right;
+    width: 1290px;
+    height: 580px;
+    margin-top: 200px;
+    margin-left: 350px;
+    position: absolute;
+}
+.ticker{
+    background-color: #c7c7c7;
+    width: 6%;
+}
+.amount{
+    background-color: #e8e8e8;
+    width: 7%;
+}
+.avg-buy-price{
+    background-color: #c7c7c7;
+    width: 12%;
+}
+.value{
+    background-color: #e8e8e8;
+    width: 17%;
+}
+.current-price{
+    background-color: #c7c7c7;
+    width: 12%;
+}
+.current-value{
+    background-color: #e8e8e8;
+    width: 16%;
+}
+.return{
+    background-color: #c7c7c7;
+    width: 10%;
+}
+.sl-price{
+    background-color: #e8e8e8;
+    width: 10%;
+}
+.tp-price{
+    background-color: #c7c7c7;
+    width: 10%;
+}
+.sell{
+    background-color: #e8e8e8;
+    width: 20%;
+}
+.transaction_ticker{
+    background-color: #c7c7c7;
+    width: 15%;
+}
+.transaction_type{
+    background-color: #e8e8e8;
+    width: 15%;
+}
+.amount_transaction{
+    background-color: #c7c7c7;
+    width: 10%;
+}
+.date{
+    background-color: #e8e8e8;
+    width: 15%;
+}
+.purchase_price{
+    background-color: #e8e8e8;
+    width: 15%;
+}
+.profit{
+    background-color: #c7c7c7;
+    width: 15%;
+}
+.fee{
+    background-color: #e8e8e8;
+    width: 15%;
+}
+#button_header div{
+    height: 70px;
+    background-color: #72737D;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+}
+#table_header div{
+    height: 70px;
+    background-color: #72737D;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+}
+#table_content div{
+    height: 50px;
+    float: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 2px solid #0D0F3A;
+    line-height: 50px;
+}
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+a:active {
+    text-decoration: none;
+    color: white;
+}
+.ticker-input{
+    width: 30%;
+    height: 60px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+    border-radius: 0px;
+}
+.ticker-submit{
+    width: 20%;
+    height: 60px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+    border-radius: 0px;
+    transition-duration: 0.2s;
+}
+.ticker-submit:hover{
+    width: 20%;
+    height: 60px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+    border-radius: 0px;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.ticker-input_area{
+    float: left;
+    width: 100%;
+    margin-top: 25px;
+    box-shadow: 0px 0px 7px white;
+    border: 1px solid white;
+}
+.text-input{
+    width: 800px;
+    height: 60px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+    border-radius: 0px;
+}
+
+.input_area{
+    float: left;
+    width: 800px;
+    margin-top: 25px;
+    box-shadow: 0px 0px 7px white;
+    border: 1px solid white;
+}
+#buy{
+    margin: 50px auto;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+}
+#buy:hover{
+    margin: 50px auto;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+}
+.sell_input{
+    width: 100px;
+}
+.buy_form{
+    float: left;
+    width: 64%;
+    height: 100%;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 750;
+}
+#status{
+    float: left;
+    width: 36%;
+    height: 30%;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    line-height: 50px;
+    text-align: center;
+}
+#info{
+    width: 550px;
+    color: white;
+    height: 61%;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    line-height: 90px;
+    padding-top: 4%;
+    position: absolute;
+    margin-left: 850px;
+    margin-top: 50px;
+}
+#fee{
+    line-height: 10px;
+    opacity: 0.6;
+    font-size: 20px;
+    text-decoration: underline;
+}
+#sell_btn{
+    margin-top: 8px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 17px;
+}
+#sell_ticker{
+    width: 20%;
+    height: 20%;
+    line-height: 110px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 10px;
+    box-shadow: 0px 0px 5px white;
+    float: left;
+}
+#sell_full_com_name{
+    width: 80%;
+    height: 20%;
+    line-height: 110px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 10px;
+    box-shadow: 0px 0px 5px white;
+    float: left;
+}
+#report_sell{
+    width: 100%;
+    height: 10%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 20px;
+    box-shadow: 0px 0px 5px white;
+    float: left;
+}
+#sell_amount{
+    width: 30%;
+    height: 15%;
+    line-height: 35px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 10px;
+    box-shadow: 0px 0px 5px white;
+    float: left;
+}
+#sell_amount span{
+    font-size: 20px;
+}
+#sell_buy_price{
+    width: 30%;
+    height: 15%;
+    line-height: 35px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 10px;
+    box-shadow: 0px 0px 5px white;
+    float: left;
+}
+#sell_buy_price span{
+    font-size: 20px;
+}
+#sell_value{
+    width: 40%;
+    height: 15%;
+    line-height: 35px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 10px;
+    box-shadow: 0px 0px 5px white;
+    float: left;
+}
+#sell_value span{
+    font-size: 20px;
+}
+.sell_form{
+    width: 25%;
+    height: 20%;
+    line-height: 55px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 10px;
+    box-shadow: 0px 0px 5px white;
+    float: left;
+}
+.sell_form input{
+    width: 80%;
+    height: 40%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#sell_calc_current{
+    width: 50%;
+    height: 20%;
+    line-height: 45px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 7px;
+    box-shadow: 0px 0px 5px white;
+    float: left;
+}
+#sell_calc_current span{
+    font-size: 25px;
+}
+#confirm{
+    width: 50%;
+    height: 10%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 10px;
+    float: left;
+    margin-left: 25%;
+    margin-top: 30px;
+}
+#confirm input{
+    width: 40%;
+    height: 80%;
+    font-size: 30px;
+    letter-spacing: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+}
+#confirm input:hover{
+    width: 40%;
+    height: 80%;
+    font-size: 30px;
+    letter-spacing: 5px;
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+    transition-duration: 0.2s;;
+}
+#sell_status{
+    width: 100%;
+    height: 25%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    float: left;
+}
+#manage_cash_header{
+    width: 100%;
+    height: 15%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 4px;
+    float: left;
+}
+#increase{
+    width: 50%;
+    height: 60%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    float: left;
+}
+#increase input{
+    width: 60%;
+    height: 55px;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+#increase input#submit{
+    margin-top: 30px;
+    width: 30%;
+    height: 13%;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+
+}
+#increase input#submit:hover{
+    width: 30%;
+    height: 13%;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+}
+#reduce{
+    width: 50%;
+    height: 60%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    float: left;
+}
+#reduce input{
+    width: 60%;
+    height: 55px;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+#reduce input#submit{
+    margin-top: 30px;
+    width: 30%;
+    height: 13%;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+
+}
+#reduce input#submit:hover{
+    width: 30%;
+    height: 13%;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+}
+#cash_status{
+    width: 100%;
+    height: 20%;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+#profitable_chart{
+    line-height: 35px;
+}
+#specified_share_view{
+    width: 100%;
+    height: 400px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+table, td {
+    border: 1px solid rgba(255, 255, 255 , 0.3);
+    text-align: right;
+}
+table th {
+    border: 2px solid white;
+    text-align: center;
+    font-weight: 800;
+}
+#select_share{
+    color: black;
+    opacity: 0.8;
+    transition-duration: 0.1s;
+}
+#select_share:hover{
+    opacity: 1;
+    transition-duration: 0.1s;
+}
+#menu_option_user{
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 20px;
+    float: left;
+    margin-left: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition-duration: 0.15s;
+    width: 70%;
+    background-color: gray;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px darkgray;
+    margin-bottom: 10px;
+}
+#menu_option_user span{
+    text-align: center;
+    position: absolute;
+    margin-top: 15px;
+    width: 100px;
+}
+#specified_transaction_view{
+    color: white;
+    margin-top: 20px;
+    width: 900px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+}
+#to_left{
+    text-align: left;
+}
+#center{
+    text-align: center;
+}
+#select_sl_tp{
+    color: black;
+    opacity: 0.8;
+    transition-duration: 0.1s;
+}
+#select_sl_tp:hover{
+    color: black;
+    opacity: 1;
+    transition-duration: 0.1s;
+}
+#select_sl_tp img{
+    position: absolute;
+}
+#sl_tp_form{
+    height: 230px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    color: white;
+}
+#sl_tp_form input{
+    width: 500px;
+    margin-top: 20px;
+    height: 45px;
+    text-align: center;
+    font-size: 30px;
+}
+#sl_tp_form #submit{
+    width: 200px;
+    margin-top: 20px;
+    height: 45px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+}
+#sl_tp_form #submit:hover{
+    width: 200px;
+    margin-top: 20px;
+    height: 45px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: gray;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+    color: white;
+}
+#sl_tp_status{
+    height: 150px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
