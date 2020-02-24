@@ -9,13 +9,13 @@ class LoadDataTest {
     @Test
     void shouldReturnFullNameForCorrectTicker() {
         //given
-        String correctTicker = "KGH";
+        String correctTicker = "PKN";
 
         //when
         String result = new DownloadCurrentData().loadAndScanTickers(correctTicker);
 
         //then
-        assertThat(result).isEqualTo("KGHM POLSKA MIEDŹ SA");
+        assertThat(result).isEqualTo("POLSKI KONCERN NAFTOWY ORLEN SA");
 
     }
 
