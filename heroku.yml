@@ -1,0 +1,8 @@
+build:
+  docker:
+    web: web/Dockerfile
+release:
+  command:
+    - ./run.sh
+  image: worker
+run:
